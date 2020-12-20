@@ -12,9 +12,11 @@
 
 <body>
     <div class="container">
-        <output class="password">
-            generated-password
+        <output class="password" id="password">
+            <p class='text'>generated-password</p>
+            <button class="copy-button" id="copy-button">Copy!</button>
         </output>
+
         <div class="form">
             <label for="how-many" class="label-1">How many chars:</label>
 
@@ -34,7 +36,7 @@
             <input type="checkbox" name="numbers" id="numbers" class="label-2">
         </div>
         <div class="form">
-            <label for="special" class="label-1">Include special chars</label>
+            <label for="special" class="label-1">Include scecial chars</label>
             <input type="checkbox" name="special" id="special" class="label-2">
         </div>
         <button class="btn">Generate Password</button>
