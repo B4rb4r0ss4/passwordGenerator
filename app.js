@@ -15,7 +15,7 @@ const generateBigChar = () => {
 }
 
 const generateSpecialChar = () => {
-    const specialChars = '!@#$%^&*():"{}?><';
+    const specialChars = '!@#$%^&*()_+=';
     return specialChars[Math.floor(Math.random() * specialChars.length)]
 }
 
@@ -44,11 +44,13 @@ class Password {
             }
         } else {
             this.password = `You haven't ticked chars`;
+
         }
     }
 
     displayPassword() {
         document.querySelector('.text').textContent = this.password;
+        console.log(this.password)
     }
 }
 
