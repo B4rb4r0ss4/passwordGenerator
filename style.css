@@ -35,6 +35,24 @@ body {
     margin-bottom: 30px;
 }
 
+.copy-button {
+    position: absolute;
+    top: 100px;
+    left: 455px;
+    padding: 5px;
+    background-color: #faf4ff;
+    border: none;
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+}
+
+.password:hover button {
+    opacity: 1;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translateY(-70%);
+}
+
 .form {
     margin-top: 10px;
     color: #faf4ff;
