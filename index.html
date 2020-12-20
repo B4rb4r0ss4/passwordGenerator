@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Password-generator</title>
+</head>
+
+<body>
+    <div class="container">
+        <output class="password">
+            generated-password
+        </output>
+        <div class="form">
+            <label for="how-many" class="label-1">How many chars:</label>
+
+            <input type="number" name="how-many" id="how-many" class="label-2">
+
+        </div>
+        <div class="form">
+            <label for="upper" class="label-1">Include uppercase letters</label>
+            <input type="checkbox" name="upper" id="upper" class="label-2">
+        </div>
+        <div class="form">
+            <label for="lover" class="label-1">Include lovercase letters</label>
+            <input type="checkbox" name="lower" id="lower" class="label-2">
+        </div>
+        <div class="form">
+            <label for="numbers" class="label-1">Include numbers</label>
+            <input type="checkbox" name="numbers" id="numbers" class="label-2">
+        </div>
+        <div class="form">
+            <label for="special" class="label-1">Include scecial chars</label>
+            <input type="checkbox" name="special" id="special" class="label-2">
+        </div>
+        <button class="btn">Generate Password</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
