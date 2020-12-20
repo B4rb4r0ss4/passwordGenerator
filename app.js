@@ -48,7 +48,7 @@ class Password {
     }
 
     displayPassword() {
-        document.querySelector('.password').textContent = this.password;
+        document.querySelector('.text').textContent = this.password;
     }
 }
 
@@ -68,4 +68,13 @@ document.querySelector('.btn').addEventListener('click', () => {
     const newPassword = new Password(inputValue.howLong);
     newPassword.generatePassword(inputValue);
     newPassword.displayPassword();
+});
+
+document.querySelector('.copy-button').addEventListener('click', () => {
+    const r = document.createRange();
+    r.selectNode(document.querySelector('.text'))
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(r);
+    document.execCommand('copy');
+    window.getSelection().removeAllRanges();
 });
